@@ -1,0 +1,338 @@
+
+body{
+    background-color: #fffefe;
+    color: #0f231c;
+}
+.h-01-bold{
+    font-size: larger;
+    font-family: monospace;
+    font-weight: bolder;
+    color: #0f231c;
+    /* font-family: Brush Script MT, Brush Script Std, cursive; */
+
+}
+.h-02-bold{
+    text-align:  center;
+    font-size: larger;
+    color: #1f4638;
+    /* font-family: mon
+    ospace; */
+    /* font-weight: bold; */
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.h-03-bold{
+    /* font-family: Stencil Std, fantasy; */
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 40px;
+}
+.h-04-bold{
+    font-family: Jazz LET;
+}
+.text1{
+    box-shadow:   inset 0.3em 0.1em 1em#b8dfd1,
+                0.111em 0.1em 1em#3f8c71;;
+                margin-left: 105px;
+            }
+.nav-section{
+background-color: #dbefe8;
+}
+.navbar-brand{
+     /* position: absolute; */
+    left: 0;
+    text-align: left;
+}
+.nav{
+    width:100%;
+    position: fixed;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fffefe;
+    z-index: 999;
+    padding: 10px 100px;
+ 
+}
+
+.loginButton{
+    display: flex;
+    justify-content: flex-end;
+   color: #dbefe8;
+}
+
+.hero-section{
+    background-color:#4faf8e;
+    padding-top: 40px ;
+    min-height:  750px;
+}
+
+.registration-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    /* flex-wrap: nowrap; */
+  }
+  .registration-section .registration-form h3{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+
+.registration-form {
+       background-color:    #dbefe8;
+       /* margin: 30px 0px 5px 0px;  */
+       padding: 40px;
+       border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+}
+   @media screen and (max-width: 767px) {
+    .registration-section {
+      padding: 0;
+    }
+    .registration-form{
+        border-radius: 0px; /* Add rounded corners */
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+  } 
+  .banner{
+    position: relative;
+  }
+
+  
+  .banner-text {
+    color: #333;
+    padding: 0px 0px;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 20px;
+    
+  }
+  .banner-text h2{
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    color: #0f231c;
+  }
+
+  button{
+ width: 100%;
+  }
+  .subheading-00{
+    color:#efe8db;
+    text-align: left;
+    
+  }
+  .subheading-00 .h-07-bold {
+      font-weight: bold;
+      color:#1f4638;
+  }
+  .hassle-free{
+    margin: 20px;
+    padding: 20px;
+  }
+  .h-07-bold{
+    text-align: left;
+    color: #0f231c !important;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 600   ;
+  }
+
+.sponsors {
+	background-color: #f8f8f8d7;
+	height: 200px;
+	display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.wrapper {
+	background-color:#f8f8f8d7;
+	height: 130px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.wrapper:before, .wrapper:after {
+	content: "";
+	position: absolute;
+	height: 130px;
+	width: 150px;
+	z-index: 2;
+}
+
+.wrapper:after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.wrapper:before {
+	left: 0;
+	top: 0;
+}
+
+.wrapper .track {
+	display: flex;
+	width: calc(150px * 10);
+	animation: scroll 15s 0.5s linear infinite;
+}
+
+.wrapper .logo {
+	width: 150px;
+}
+
+.wrapper .logo img {
+	height: 90px;
+}
+
+@keyframes  scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-150px * 5));
+	}
+}
+
+
+/* hire form */
+/* .candidates{
+    display: flex;
+    gap: 10px;
+    border: solid #30303088;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+    
+} */
+
+.whyhire{
+    margin-top: 58px;
+    margin-bottom: 20px;
+    padding: 28px;
+    text-align: left;
+    font-family: 'Inter var', sans-serif;
+}
+.whyhire h2{
+    color: #0f231c;
+    font-family: 'Inter var', sans-serif;
+    font-weight:  600;
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+}
+.candidates{
+position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    margin-bottom: 104px;
+    margin-top: 40px;
+    padding: 32px 0;
+    text-align: left;
+}
+.candidates h4{
+    font-weight: bold;
+    color:#257ea1;
+}
+.candidate1{
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+}
+.candidate2{
+    padding: 20px;
+}
+
+
+
+/* faq */
+.faq{
+    margin: 0px 0px 20px 0px;
+    padding: 50px;
+    background-color: #dbefe8;
+   
+}
+.faq .faqheader{
+    color: #0f231c;
+    font-family: 'Inter var', sans-serif;
+    font-weight:  600;
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+}
+.questions{
+    margin-top: 10px;
+    padding: 10px 80px 10px 0px;
+    border-radius: 10px; /* Add rounded corners */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  
+    /* padding: 500px; */
+}
+.features-div{
+  
+    text-align: center;
+    display: block;
+
+}
+.feature-card{
+    display: flex;
+    align-items: center;
+    text-align: left;
+  
+}
+.features{
+    margin-top:6px;
+    padding-top: 20px;
+    font-size: 14px;
+    color:#333;
+    
+}
+.feature-card-body{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.sidebar-div{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+
+}
+
+.sidebar-div .feature-card-body:hover{
+    /* padding: 0px; */
+    border-right: solid 2px;
+    border-radius: 50px;
+    background-color:#ddd;
+}
+.mainbar-div{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #dbefe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feature-card-body .text :hover{
+color: #83a6c7;
+}
