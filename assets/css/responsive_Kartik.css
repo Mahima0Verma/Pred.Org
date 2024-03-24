@@ -1,4 +1,4 @@
-@media screen and (min-width:300px) and (max-width:500px) {
+@media screen and (min-width:375px) and (max-width:500px) {
 
     /* iphone 12 pro */
     body {
@@ -10,36 +10,37 @@
     }
 
 
-
+    /* top-slider */
     .slider-img {
         height: auto;
         width: 100%;
     }
 
+    /* ---------------- */
     .carousel-1 {
-        width: 392px !important;
-        margin-left: -15px;
+        width: 365px !important;
+        margin-left: -12px;
     }
 
-    .carousel-2 {
-        width: 392px !important;
-        margin-left: -15px;
-    }
+
+
 
     .container {
         padding: 0 -1px;
     }
 
     .carousel-3 {
-        width: 392px !important;
-        margin-left: -15px;
+        width: 370px !important;
+        margin-left: -20px;
+
 
 
     }
 
     .card-img-top {
         height: 200px !important;
-        width: 90% !important;
+        width: 360px !important;
+        margin-left: 15px;
     }
 
     .box {
@@ -71,9 +72,44 @@
     }
 }
 
+/* tablet */
 
 
-@media screen and (min-width:500px) {
+@media screen and (min-width :700px) and (max-width :820px) {
+    .carousel-1 {
+        width: 665px !important;
+        margin-left: -12px;
+    }
+
+    .carousel-3 {
+        width: 670px !important;
+        margin-left: -10px;
+
+
+
+    }
+
+    .partner-img {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .text h5 {
+        font-size: 15px;
+    }
+
+    .box {
+        margin-left: 0px;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (min-width:800px) {
     .gs {
         grid-auto-flow: column;
     }
