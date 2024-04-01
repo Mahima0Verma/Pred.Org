@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap_Akhilesh.css">
-    <link rel="stylesheet" href="assets/css/index_Akhilesh.css">
+    <link rel="stylesheet" href="/Task-4/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,6 +14,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 <!-- Latest compiled and minified CSS -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
@@ -22,6 +25,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
 <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <script>
@@ -54,34 +59,57 @@
 <body>
    <div class="vh-100 w-100 mx-auto">
    
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent my-2">
-      <div class="container-fluid Roboto-font">
-        <a class="navbar-brand mx-5" href="#">PREDULIVE</a>
-        <button id="navbar-toggler" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      
-        <div  class="collapse navbar-collapse  " id="navbarSupportedContent">
-          <ul style="gap: 30px;" class="navbar-nav me-auto mb-2 mb-lg-0 font-weight-lighter ">
-            <li class="nav-item dropdown">
-              <a class="nav-link fw-bold" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link fw-bold" href="#">Programs</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link fw-bold" href="#blogs">Blogs</a>
-            </li>
-          </ul>
-          <div  class="ml-auto mt-2">
-            <button class="btn fw-bold teal border p-2 bg-primary" type="submit">Internships</button>
-            <button class="btn fw-bold mx-3 teal border p-2 bg-primary" type="submit">Trainings</button>
+    <div class="">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary  p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Predulive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Internship
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Work From Home</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Bangolare</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Lucknow</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Kanpur</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Noida</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Hydrabad</a></li>
+                  <li><a class="dropdown-item" href="#">Internship in Jaipur</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Post Internship</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Delopment</a></li>
+                  <li><a class="dropdown-item" href="#">Backend Developement</a></li>
+                  <li><a class="dropdown-item" href="#">Php Developer</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login/Register
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Register as a student</a></li>
+                  <li><a class="dropdown-item" href="#">Register as a Employer</a></li>
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
       <!-- hero section -->
       <section class="bg-main bg-color hero-section">
          <div class=" ">
@@ -151,250 +179,104 @@
       </section>
       <!-- card -->
       <section style="margin-top: 300px;  ">
-        <div class="container mb-5 ">
+        <div class="container mb-5  ">
           <h1 class="font-weight-bold text-lg-cente text-center">What’s in it for you?</h1>
-          <hr style="height: 30px; width: 250px; border-top: 1px solid black;">
+          <hr style="height: 30px; width: 250px; border-top: 1px solid black; margin: auto; ">
         </div>
-       <div class="w-75 d-flex justify-content-center align-content-center container">
-        <!-- Card deck -->
-<div class="card-deck">
-
-  <!-- Card -->
-  <div class="card mb-4">
-
-    <!--Card image-->
-    <div class="view overlay">
-      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9k1SrcnZ0vbhGmi9EkKlP20x_-UtNXJtUFc3l6zJJHg&s"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-
-      <!--Title-->
-      <h4 class="card-title">Full Time Job</h4>
-      <!--Text-->
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-
-    </div>
-
-  </div>
-  <!-- Card -->
-
-  <!-- Card -->
-  <div class="card mb-4">
-
-    <!--Card image-->
-    <div class="view overlay">
-      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZlDKo4p0FXDPQtZRJwHj1ATv2tMDuhgzLJZ7NI5uQA&s"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-
-      <!--Title-->
-      <h4 class="card-title">Internship</h4>
-      <!--Text-->
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-
-    </div>
-
-  </div>
-  <!-- Card -->
-
-  <!-- Card -->
-  <div class="card mb-4">
-
-    <!--Card image-->
-    <div class="view overlay">
-      <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/72/99/certified-logo-simple-style-vector-19137299.jpg"
-        alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-
-      <!--Title-->
-      <h4 class="card-title">Certification</h4>
-      <!--Text-->
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-
-    </div>
-
-  </div>
-  <!-- Card -->
-
-</div>
-<!-- Card deck -->
-       </div>
+        <div class="container mt-5 ">
+          <div class="row offset-md-1 ">
+            <div class="col-md-5  m-3 ">
+              <div class="card text-center h-100 shadow  " style="border-radius: 1rem ; background-color: #f0f8f5; ">
+                <div class="card-body    ">
+                  <i class="fas fa-briefcase fa-3x"></i>
+                  <h5 class="card-title mt-3">Full-time Job</h5>
+                  <p class="card-text">A full-time job in Frontline Sales at PepsiCo India for the top 50 stars of this campus competition</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1 m-3">
+              <div class="card text-center h-100 shadow"style="border-radius: 1rem; background-color: #f0f8f5;">
+                <div class="card-body">
+                  <i class="fas fa-graduation-cap fa-3x"></i>
+                  <h5 class="card-title mt-3">Micro-internship</h5>
+                  <p class="card-text">A micro-internship opportunity under the direct mentorship of industry leaders from PepsiCo India for the top 1000 stars</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1 m-3">
+              <div class="card text-center h-100 shadow " style="border-radius: 1rem; background-color: #f0f8f5;">
+                <div class="card-body">
+                  <i class="fas fa-users fa-3x"></i>
+                  <h5 class="card-title mt-3">Live Workshops</h5>
+                  <p class="card-text">An opportunity to Interact and build relations with PepsiCo leaders in live workshops where interested female college freshers can also participate and get a certificate of participation</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1 m-3">
+              <div class="card text-center h-100 shadow" style="border-radius: 1rem; background-color: #f0f8f5;">
+                <div class="card-body">
+                  <i class="fas fa-graduation-cap fa-3x"></i>
+                  <h5 class="card-title mt-3">Career in FMCG Sales</h5>
+                  <p class="card-text">An opportunity to build a deeper understanding of Economic Independence of women and seek inspiration to build a career in FMCG Sales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- important highlight -->
       <section>
       <div class="text-center mt-5 ">
         
         <h1>Important Highlights</h1>
-        <hr style="height: 30px; width: 250px; border-top: 1px solid black;">
+        <hr style="height: 30px; width: 250px; border-top: 1px solid black; margin: auto;">
       </div>
-      <div class="container bootdey">
-        <div class="row gutters">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-        <div class="card-body">
-        <!-- Timeline start -->
-        <div class="timeline">
-          <div class="timeline-row">
-            <div class="timeline-time">
-              7:45PM<small>May 21</small>
-            </div>
-            <div class="timeline-dot fb-bg"></div>
-            <div class="timeline-content">
-              <i class="fa fa-map-marker"></i>
-              <h4>Admin theme!</h4>
-              <p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.</p>
-              <div class="">
-                <span class="badge badge-light">Design</span>
-                <span class="badge badge-light">Admin</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              8:00 AM<small>May 18</small>
-            </div>
-            <div class="timeline-dot green-one-bg"></div>
-            <div class="timeline-content green-one">
-              <i class="fa fa-warning"></i>
-              <h4>Admin theme!</h4>
-              <p>
-                Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar.
-              </p>
-              <div class="">
-                <span class="badge badge-light">Design</span>
-                <span class="badge badge-light">Admin</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              7:25 PM<small>May 6</small>
-            </div>
-            <div class="timeline-dot green-two-bg"></div>
-            <div class="timeline-content green-two">
-              <i class="fa fa-list"></i>
-              <h4>Best Admin Template!</h4>
-              <p>Custom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.</p>
-              <div>
-                <span class="badge badge-light">Invoice</span>
-                <span class="badge badge-light">Graphs</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              3:55 PM<small>Apr 26</small>
-            </div>
-            <div class="timeline-dot green-three-bg"></div>
-            <div class="timeline-content green-three">
-              <i class="icon-directions"></i>
-              <h4>Milestone Admin</h4>
-              <p>
-                Admin theme includes graphs, invoice, timeline, widgets, projects, calendar, components, layouts, todo's.
-              </p>
-              <div>
-                <span class="badge badge-light">Profile</span>
-                <span class="badge badge-light">Dashboard</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              5:24 PM<small>Apr 12</small>
-            </div>
-            <div class="timeline-dot green-four-bg"></div>
-            <div class="timeline-content green-four">
-              <i class="fa fa-user"></i>
-              <h4>Milestone Dashboard</h4>
-              <p class="no-margin">Milestone Admin Dashboard includes invoice, profile, tasks, gallery, projects, maintanence.</p>
-              <div>
-                <span class="badge badge-light">Analytics</span>
-                <span class="badge badge-light">Graphs</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              11:25 AM<small>Apr 19</small>
-            </div>
-            <div class="timeline-dot teal-bg"></div>
-            <div class="timeline-content teal">
-              <i class="fa fa-coffee"></i>
-              <h4>Milestone Template</h4>
-              <p class="no-margin">Panels, alerts, notifications, new input styles, pricing plans, project plan, signup, login and register.</p>
-              <div>
-                <span class="badge badge-light">Labels</span>
-                <span class="badge badge-light">Filters</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-row">
-            <div class="timeline-time">
-              12:30 PM<small>May 25</small>
-            </div>
-            <div class="timeline-dot sea-green-bg"></div>
-            <div class="timeline-content sea-green">
-              <i class="fa fa-image"></i>
-              <h4>Milestone dashboard</h4>
-              <p>Milestone Admin Dashboard contains Ion slider, heatmap, alerts, breadcrumbs, alerts, pricing, signup, login and register.</p>
-              <div>
-                <span class="badge badge-light">BS 4</span>
-                <span class="badge badge-light">Sass</span>
-              </div>
-            </div>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h4 style="margin-left: 1.2rem;">Latest News</h4>
+            <ul class="timeline-3">
+              <li>
+                <a href="#!">New Web Design</a>
+                <a href="#!" class="float-end">21 March, 2014</a>
+                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam
+                  non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis
+                  ligula in sodales vehicula....</p>
+              </li>
+              <li>
+                <a href="#!">21 000 Job Seekers</a>
+                <a href="#!" class="float-end">4 March, 2014</a>
+                <p class="mt-2">Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque
+                  felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+              </li>
+              <li>
+                <a href="#!">Awesome Employers</a>
+                <a href="#!" class="float-end">1 April, 2014</a>
+                <p class="mt-2">Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt
+                  vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- Timeline end -->
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
 
       
 
       </section>
         <!-- button -->
-      <div class="text-center mb-5">
+      <div style="margin-top: 50px; margin-bottom: 70px;" class="text-center ">
         <button style="padding-left: 80px; padding-right: 80px; padding-top: 10px; padding-bottom: 10px;  " class="text-bg-dark rounded   bg-primary text-white    ">Register Now</button>
       </div>
       <div>
           <div class="text-center">
            <h1>Know more</h1>
-           <hr style="height: 30px; width: 150px; border-top: 1px solid black;">
+           <hr style="height: 30px; width: 150px; border-top: 1px solid black; margin: auto;">
           </div>
           
       </div>
       <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
+        <div class="row offset-lg-1">
+          <div class="col-lg-11 ">
             <div class="accordion" id="accordionExample">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -444,86 +326,98 @@
         <hr style="height: 30px; width: 95%; border-top: 1px solid black;">
     </div>
       <!-- FOOTER -->
-      <div>
-        <div style="gap: 40px;" class=" d-flex mt-5  justify-content-center align-content-center ">
-          <!--footer-->
-
-        
+        <div class="">
+          <div class="row">
+              <div class="col">
+                  <div class="footer-section d-flex mt-5 justify-content-center align-content-center bg-dark pt-5 text-white">
+                      <!-- Internships -->
+                      <div class="col-md">
+                          <p class="font-weight-bold">Internships</p>
+                          <p>Internship in India</p>
+                          <p>Internship in Delhi</p>
+                          <p>Internship in Banglore</p>
+                          <p>Internship in Hyderabad</p>
+                          <p>Internship in Mumbai</p>
+                          <p>Internship in Chennai</p>
+                          <p>Internship in Gurgaon</p>
+                          <p>Internship in Kolkata</p>
+                          <p>Virtual internship</p>
+                          <p>View all Internship</p>
+                          <!-- Other internship items -->
+                      </div>
       
-
-          <div class=" ">
-              <p class="font-weight-bold">Internships</p>
-              <p>Internship in India</p>
-              <p>Internship in Delhi</p>
-              <p>Internship in Banglore</p>
-              <p>Internship in Hyderabad</p>
-              <p>Internship in Mumbai</p>
-              <p>Internship in Chennai</p>
-              <p>Internship in Gurgaon</p>
-              <p>Internship in Kolkata</p>
-              <p>Virtual internship</p>
-              <p>View all Internship</p>
+                      <!-- Internship by Stream -->
+                      <div class="col-md gap-4">
+                          <p class="font-weight-bold">Internship by Stream</p>
+                          <p>Computer Science Internship</p>
+                    <p>Electronics Internship</p>
+                    <p>Mechanical Internship
+                    
+                        </p>
+                    <p>Civil Internship</p>
+                    <p>Marketing Internship</p>
+                    <p> Chemical Internship</p>
+                    <p> Finance Internship</p>
+                    <p> Summer Research Fellowship</p>
+                    <p> Campus Ambassador Program</p>
+                   
+                      </div>
+      
+                      <!-- Jobs by Places -->
+                      <div class="col-md gap-4">
+                          <p class="font-weight-bold">Jobs by Places</p>
+                          <p>Jobs in Delhi</p>
+                          <p> Jobs in Mumbai</p>
+                          <p>Jobs in Bangalore</p>
+                          <p>Jobs in Jaipur</p>
+                          <p>Internship in Mumbai</p>
+                          <p>Internship in Chennai</p>
+                          <p>Internship in Gurgaon</p>
+                          <p>Internship in Kolkata</p>
+                          <p>Virtual internship</p>
+                          <p>View all Internship</p>
+                          <!-- Other place items -->
+                      </div>
+      
+                      <!-- Jobs by Stream -->
+                      <div class="col-md gap-4">
+                          <p class="font-weight-bold">Jobs by Stream</p>
+                          <p>Marketing jobs</p>
+                          <p> Content writing jobs</p>
+                          <p> Web development jobs</p>
+                          <p> Sales jobs</p>
+                          <p> Finance jobs</p>
+                          <p>Digital Marketing jobs</p>
+                          <p>Computer Science jobs</p>
+                          <p> Graphic Design jobs</p>
+                          <p> Data Science jobs</p>
+                          <p>  View all jobs</p>
+                          <!-- Other stream jobs -->
+                      </div>
+      
+                      <!-- Placement Guarantee Courses -->
+                      <div class="col-md gap-4">
+                          <p class="font-weight-bold">Placement Guarantee Courses</p>
+                          <p>Full Stack Development course with placement </p>
+                          <p> Data Science course with placement</p>
+                          <p> Human Resource Management course with placement</p>
+                          <p> Digital Marketing course with placement</p>
+                          <p>  UI/UX Design course with placement</p>
+                          <p> Electric Vehicle course with placement</p>
+                          <!-- Other course items -->
+                      </div>
+      
+                      <!-- Apprentice -->
+                      <div class="col-md gap-2">
+                          <p class="font-weight-bold">Apprentice</p>
+                          <p>Internship in India</p>
+                          <p>Internship in Delhi</p>
+                          <p>Internship in Banglore</p>
+                          <!-- Other apprentice items -->
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="  gap-4">
-              <p class="font-weight-bold ">Internship by Stream</p>
-              <p>Computer Science Internship</p>
-              <p>Electronics Internship</p>
-              <p>Mechanical Internship
-              
-                  </p>
-              <p>Civil Internship</p>
-              <p>Marketing Internship</p>
-              <p> Chemical Internship</p>
-              <p> Finance Internship</p>
-              <p> Summer Research Fellowship</p>
-              <p> Campus Ambassador Program</p>
-              <p>View all internships</p>
-          </div>
-          <div class="  gap-4">
-              <p class="font-weight-bold ">Jobs by Places</p>
-              <p>Jobs in Delhi</p>
-              <p> Jobs in Mumbai</p>
-              <p>Jobs in Bangalore</p>
-              <p>Jobs in Jaipur</p>
-              <p>Internship in Mumbai</p>
-              <p>Internship in Chennai</p>
-              <p>Internship in Gurgaon</p>
-              <p>Internship in Kolkata</p>
-              <p>Virtual internship</p>
-              <p>View all Internship</p>
-          </div>
-          <div class="  gap-4">
-              <p class="font-weight-bold ">Jobs by Stream</p>
-              <p>Marketing jobs</p>
-              <p> Content writing jobs</p>
-              <p> Web development jobs</p>
-              <p> Sales jobs</p>
-              <p> Finance jobs</p>
-              <p>Digital Marketing jobs</p>
-              <p>Computer Science jobs</p>
-              <p> Graphic Design jobs</p>
-              <p> Data Science jobs</p>
-              <p>  View all jobs</p>
-          </div>
-          <div class="  gap-4">
-              <p class="font-weight-bold ">Placement Guarantee Courses</p>
-              <p>Full Stack Development course with placement </p>
-              <p> Data Science course with placement</p>
-              <p> Human Resource Management course with placement</p>
-              <p> Digital Marketing course with placement</p>
-              <p>  UI/UX Design course with placement</p>
-              <p> Electric Vehicle course with placement</p>
-             
-          </div>
-          <div class="  gap-2 ">
-              <p class="font-weight-bold ">Apprentice</p>
-              <p>Internship in India</p>
-              <p>Internship in Delhi</p>
-              <p>Internship in Banglore</p>
-             
-             
-          </div>
-      </div>
       </div>
       </div>
 
