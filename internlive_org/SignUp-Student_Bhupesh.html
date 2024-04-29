@@ -32,11 +32,13 @@
     <!--  -->
     <section class="form-section">
         <div class="mainbody">
+            <!-- header -->
             <div class="header">
                 <h2>Sign-up and <span>apply for free</span></h2>
                 <h4>1,50,000+ companies hiring on Internlive</h4>
             </div>
 
+            <!-- signup container -->
             <div class="signup_container mt-4">
                 <button class="google_signup">
                     <i class="fa-brands fa-google"></i>
@@ -47,38 +49,40 @@
                     <p>OR</p>
                     <div class="border"></div>
                 </div>
+                <form action="connect.php" method="post" class="email_signup mt-4">
 
-                <div class="email_signup mt-4">
+
                     <div class="email">
                         <p>Email</p>
-                        <input type="email" placeholder="john@example.com">
+                        <input type="email" placeholder="john@example.com" name="email">
                     </div>
 
                     <div class="password">
                         <p>Password</p>
-                        <input type="password" placeholder="Must be atleast 6 characters">
+                        <input type="password" placeholder="Must be atleast 6 characters" name="password">
                     </div>
                     <div class="name">
                         <div class="firstname">
                             <p>First Name</p>
-                            <input type="text" placeholder="John">
+                            <input type="text" placeholder="John" name="firstname">
                         </div>
 
                         <div class="lastname">
                             <p>Last Name</p>
-                            <input type="text" placeholder="Doe">
+                            <input type="text" placeholder="Doe" name="lastname">
                         </div>
                     </div>
+
+
                     <p>By signing up, you agree to our <a href="#">Terms and Conditions</a>.</p>
-                </div>
-                <button class="signup_button">
-                    Sign Up
-                </button>
+
+                    <button class="signup_button">
+                        Sign Up
+                    </button>
+                </form>
 
                 <p>Already registered?<a href="#">Login</a></p>
             </div>
-        </div>
-
 
         </div>
     </section>
