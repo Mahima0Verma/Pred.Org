@@ -8,9 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    /* overflow-x: hidden; */
-}
+
 
 /* colors */
 .teal {
@@ -32,9 +30,7 @@ body {
 
 .carousel-1 {
     background-color: rgb(255, 255, 255);
-    width: 1215px !important;
-
-    /* border: 1px solid black; */
+    
 
 }
 
@@ -74,11 +70,6 @@ body {
 
 .carousel-3 {
     background-color: rgb(255, 255, 255);
-    width: 1215px !important;
-
-    /* border: 1px solid black; */
-
-
 }
 
 .carousel-cell-3 {
@@ -87,6 +78,7 @@ body {
     margin-right: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    
 
 }
 
@@ -115,10 +107,6 @@ body {
 }
 
 
-.image {
-    position: relative;
-    left: 280px;
-}
 
 .gs {
     display: grid;
