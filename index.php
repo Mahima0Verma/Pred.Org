@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index_Kartik.css">
     <link rel="stylesheet" href="assets/css/responsive_Kartik.css">
-
-
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <title>PREDULIVE</title>
@@ -24,54 +22,8 @@
 
 <body>
     <!-- nav starts -->
-    <div class="main-header container-fluid position-fixed"
-        style="z-index: 1000; transition: 0.3s ease-in-out;background-color: rgba(0, 0, 0, 0.682); ">
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid Roboto-font">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                   <img src="assets/img/Predulive_Org_Logo_-removebg-preview.png" width="80px" alt="Logo">
-                </a>
-
-                <!-- Toggler/collapsible Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold " href="Predulive_org/about_raj.html">
-                                About Us
-                            </a>
-                        </li>
-                        <br>
-                        <br>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="Predulive_org/program.html">
-                                Programs
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="Predulive_org/blog_T3.html">
-                                Blogs
-                            </a>
-                        </li>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <li class="nav-item">
-                           <a href="internlive_org/internhome.html"><button class="btn fw-bold teal" type="submit">InternLive</button></a> 
-                          <a href="comingsoon.html"><button class="btn fw-bold mx-2 teal" type="submit">Founder's Talk</button></a> 
-                           
-                            <a href="comingsoon.html"><button class="btn fw-bold mx-1 teal" type="submit">Startup's Corner</button></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+  
+ <?php include '../include/navbar.html' ?>
     <!-- nav ends -->
     <!-- slider-img starts -->
     <div id="mainBanner" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
@@ -108,7 +60,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets/img/predulive home page/Banner 4 (Post Internship).png"
-                    class="d-block w-100 slider-img" alt="...">
+                    class="d-block w-100 slider-img"  alt="...">
                 <!-- <div class="carousel-caption px-md-5">
                     <h5>Logistics</h5>
                     <p class="header-txt">Unlocking the Power of Location: Navigating
@@ -118,7 +70,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <img src="assets/img/predulive home page/Banner 5 (Course and Training).png"
-                    class="d-block w-100 slider-img" alt="...">
+                    class="d-block w-100 slider-img"  alt="...">
                 
             </div>
             <!-- <div class="carousel-item" data-bs-interval="7000">
@@ -261,10 +213,10 @@
     <br>
     <br>
     <h2 class="text-center Roboto-font fw-bold">Our services </h2>
-    <div class="tread-btning-section container lg  pb-5 pt-5 center">
+    <div class="tread-btning-section container pb-5 pt-5 side " >
 
-        <div class="slider-programs">
-            <div class="carousel-1" data-flickity='{ "wrapAround":true, "prevNextButtons":false}'>
+        <div class="slider-programs ">
+            <div class="carousel-1" data-flickity='{ "wrapAround":true, "prevNextButtons":false , "groupCells" : 1}'>
                 <div class="carousel-cell-1">
                     <div class="">
                         <a href="Predulive_org/incubation_service.html">
@@ -324,10 +276,10 @@
     <br>
     <br>
     <h2 class="text-center Roboto-font fw-bold">Our Programs </h2>
-    <div class="tread-btning-section container lg  pb-5 pt-5 center">
+    <div class="tread-btning-section container pb-5 pt-5 side " >
 
         <div class="slider-programs">
-            <div class="carousel-1" data-flickity='{ "wrapAround":true, "prevNextButtons":false}'>
+            <div class="carousel-1" data-flickity='{ "wrapAround":true, "prevNextButtons":false , "groupCells" : 1}'>
                 <div class="carousel-cell-1">
                     <div class="">
                         <a href="Predulive_org/ideathon.html">
@@ -388,10 +340,10 @@
     <!-- Our Achievements starts -->
     <br><br>
     <h2 class="text-center Roboto-font fw-bold">Our Achievements</h2>
-    <div class="tread-btning-section container  pb-5 pt-5 center ">
+    <div class="tread-btning-section container  pb-5 pt-5 side " >
 
-        <div class="slider">
-            <div class="carousel-1" data-flickity='{ "wrapAround":true , "prevNextButtons": false }'>
+        <div class="slider ">
+            <div class="carousel-1 " data-flickity='{ "wrapAround":true , "prevNextButtons": false  , "groupCells" :1}'>
                 <div class="carousel-cell-1">
 
                     <a href="#">
@@ -442,12 +394,12 @@
     <br><br>
     <!-- blogs start-->
     <h2 class="text-center Roboto-font fw-bold" id="blogs">Blogs</h2>
-    <div class="tread-btning-section container pb-5 pt-5 center">
+    <div class="tread-btning-section container pb-5 pt-5 side " >
 
         <div class="slider ">
-            <div class="carousel-3" data-flickity='{ "wrapAround":true , "prevNextButtons": false }'>
+            <div class="carousel-3" data-flickity='{ "wrapAround":true , "prevNextButtons": false , "groupCells" : 1 }'>
                 <div class="carousel-cell-3">
-                    <div class="card">
+                    <div class="card"  >
                         <img src="assets/img/predulive home page/blog-2.png"
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -462,7 +414,7 @@
                 <div class="carousel-cell-3">
                     <div class="card">
                         <img src="assets/img/predulive home page/blog-3.png"
-                            class="card-img-top" alt="...">
+                            class="card-img-top"  alt="...">
                         <div class="card-body">
                             <h5 class="card-title">A Guide to Building a Successful Startup
                             </h5>
@@ -509,83 +461,16 @@
     <!-- partner with us -->
 
     <!-- footer -->
-    <footer class=" mt-md-5 pt-5 border-top"
-        style="background-color: rgba(20, 20, 20, 0.926); color: white; width: 100%; ">
-
-
-        <div class="container  ">
-            <div class="gs">
-                <div class="row">
-                    <div class="col">
-                        <h1>PREDULIVE</h1>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.7700246611125!2d81.06434337424844!3d26.88930147666119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3cebefbb1f5%3A0xb8d92d5145d3bc9f!2sPredulive%20Labs!5e1!3m2!1sen!2sin!4v1713184443634!5m2!1sen!2sin" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="d-flex">
-                            <div class="col-2 col-md mx-5">
-                                <h5>Company</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About Us
-        </a></li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Programs
-                                         </a></li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Blogs
-                                          </a></li>
-                                          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Internships
-                                        </a></li>
-                                   <li class="mb-1"><a class="link-secondary text-decoration-none" href="comingsoon.html">Founder's Talk
-                                         </a></li>
-                                         <li class="mb-1"><a class="link-secondary text-decoration-none" href="comingsoon.html">Training
-                                        </a></li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="col-4 col-md">
-                                <h5>Get In Touch</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none "
-                                            href="#">Address: 1596, Avas Vikas Colony, Gandhi Nagar, Basti, Uttar Pradesh 272001 
-                                        </a>
-                                    </li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Email: info@predulive.org</a></li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Phone: +91 9918443373</a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                            <div class="col-3 ">
-                                <h5>About</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a>
-                                    </li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none"
-                                            href="#">Locations</a>
-                                    </li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a>
-                                    </li>
-                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </footer>
+   <?php include '../include/footer.html' ?>
     <!-- footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script>
+
+   </script>
 </body>
 
 </html>
