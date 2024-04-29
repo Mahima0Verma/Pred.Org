@@ -1,0 +1,29 @@
+/* footer css */
+.footer{
+    color: white !important;
+    background-color: black;
+    margin-top: 100px;
+    padding: 50px;
+  }
+  .footer p{
+margin-bottom: -0px;
+  }
+  .footer li{
+    list-style: none;
+  }
+  .footer a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer a:hover{
+    color: #82CAAF;
+    font-weight: 500;
+  }
+  .footer h5{
+    border-bottom: 2px solid #82CAAF;
+   padding-bottom: 10px;
+  }
+  .footer i {
+    cursor: pointer !important;
+    margin: 2px;
+  }

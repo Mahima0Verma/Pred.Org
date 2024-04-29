@@ -15,9 +15,6 @@ body{
     text-align:  center;
     font-size: larger;
     color: #1e4738;
-    /* font-family: mon
-    ospace; */
-    /* font-weight: bold; */
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 .h-03-bold{
@@ -56,7 +53,6 @@ background-color: #c9d9e8;
     
  
 }
-
 
 /* -----------------Hero Section------------------ */
 
@@ -283,7 +279,14 @@ background-color: #c9d9e8;
 }
 @media (max-width: 980px) {
 
+    .hero-section{
+        padding-top: 0px ;
+    }
+    .registration-section{
+        padding-bottom: 40px;
 
+    }
+    .registration-section
     .hassle-free{ 
         padding-bottom: 30px;
         display: block;

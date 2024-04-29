@@ -8,10 +8,10 @@
   
 }
 /* logo */
-/* .logoimg{
+.logoimg{
 width: 150px;
-height: 100px;
-} */
+height:40px;
+}
 
 /* navbar css */
 
@@ -60,10 +60,7 @@ height: 100px;
   .dropdown-menu.show {
     display: flex;
   }
-  .dropdown-menu a:hover{
-    color: #1c6bc2;
-  }
-
+ 
   .dropdown-menu li:first-child a {
     font-weight: bold;
     font-size: 16px;
